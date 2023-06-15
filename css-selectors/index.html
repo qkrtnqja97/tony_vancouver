@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- Selectors -->
+        <div>
+            <p><em>Type</em> Selector Example. </p>
+        </div>
+    
+        <div>
+            <p class="class-selector"><em>Class</em> Selector Example. </p>
+        </div>
+
+        <div>
+            <p class="class-selector" id="id-selector"><em>Id</em> Selector Example. </p>
+        </div>
+
+        <!-- Descendant Combinator Selectors -->
+        <div class="parent">
+            <p><em>Child</em> Selector Example.</p>
+
+            <div class="child-div">
+                <p>Descendant Selector Example.</p>
+            </div>
+        </div>
+        <p><em>Sibling</em> Selector Example.</p>
+        <p><em>Sibling</em> Selector Example.</p>
+        <p><em>Sibling</em> Selector Example.</p>
+
+        <!-- Pseudo Class Selectors -->
+        <div class="pseudo-class">
+            <p>Example of pseudo-classes</p>
+            <p>Example of pseudo-classes</p>
+            <p class="ignore-me">Example of pseudo-classes</p>
+            <p>Example of pseudo-classes</p>
+            <ul>
+                <li>:hover</li>
+                <li>:focus</li>
+                <li>:visited</li>
+                <li>:first-child</li>
+                <li>:first-of-type</li>
+                <li>:nth-child</li>
+                <li>:nth-of-type</li>
+                <li>:not()</li>
+            </ul>
+            <p>This is the last element.</p>
+        </div>
+
+        <!-- Attribute Selectors -->
+        <div class="links">
+            <a href="https://www.google.com/">Google</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+            <a href="https://www.w3schools.com/">W3school</a>
+            <a href="#">GitHub</a>
+        </div>
+
+        <!-- Chaining Selectors Example -->
+        <div>
+            <p class="class-1"> Example of chaining selector</p>
+            <p class="class-1 class-2" > Example of chaining selector</p>
+        </div>
+        
+    </body>
+</html>

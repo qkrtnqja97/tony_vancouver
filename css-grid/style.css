@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:  
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem auto;
+    width: min(90%, 75rem);
+}
+
+.post:nth-child(1) {
+    grid-area: one;
+}
+
+.post:nth-child(2) {
+    grid-area: two;
+}
+
+.post:nth-child(3) {
+    grid-area: three;
+}
+
+.post:nth-child(4) {
+    grid-area: four;
+}
+
+.post:nth-child(5) {
+    grid-area: five;
+}
+
+@media (min-width: 40em) {
+    .grid{
+        grid-template-areas:  
+        'one one  five'
+        'two three five'
+        'four four five';
+    }
+}
+
+@media (min-width: 50em) {
+    .grid{
+        grid-template-areas:  
+        'one one two five'
+        'three four four five';
+    }
+}
+
+.region-heading-section {
+    margin: 5rem auto 3rem auto;
+    width: min(90%, 75rem);
+    font-size: 2rem;
+}
+
+.post {
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post:last-child {
+    grid-column-start: 4;
+    grid-column-end: 1 / 4;
+}
+
+#post-1 {
+    background-color: rgb(218, 218, 218);
+}
+
+#post-2 {
+    background-color: rgb(142, 208, 232);
+}
+
+#post-3 {
+    background-color: rgb(218, 218, 218);
+}
+
+#post-4 {
+    background-color: rgb(142, 208, 232)
+}
+
+#post-5 {
+    background-color: rgb(218, 218, 218);
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2rem;
+    background: rgb(95,95,95);
+}
+
+h1, p {
+    margin-top: 1rem;
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    body { 
+        background: darkgoldenrod;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    body { 
+        background: teal;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (orientation: landscape) {
+    div{
+        margin: auto 20vw;
+    }
+}
+
+@media (orientation: portrait) {
+    div{
+        margin: 20vw auto;
+    }
+}

@@ -1,0 +1,1 @@
+This exercise is a showcase of CSS Media Queries.

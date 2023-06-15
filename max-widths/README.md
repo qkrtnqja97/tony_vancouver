@@ -1,0 +1,1 @@
+This exercise shows how to use max widths.
